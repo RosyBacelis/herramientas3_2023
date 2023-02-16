@@ -7,14 +7,6 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 
-with st.sidebar:
-    st.write("Esta es una barra lateral")
-
-    option = st.selectbox(
-        'How would you like to be contacted?',
-        ('Email', 'Home phone', 'Mobile phone'))
-
-    st.write('You selected:', option)
 
 
 df = px.data.gapminder()
